@@ -5,3 +5,4 @@
 - [AP325講義鏈接](https://drive.google.com/drive/u/0/folders/10hZCMHH0YgsfguVZCHU7EYiG8qJE5f-m)
 
 ---
+立個flag，不論我最後上哪一間學校我都要在開學前把AP325的題目完。
