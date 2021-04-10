@@ -8,7 +8,7 @@
 - [AP325練習題單](https://hackmd.io/@cube/rJIDWb40v)
 - [AP325中一中OnlineJudge](https://judge.tcirc.tw/Problems?tabid=AP325#tab03)
 - [AP325社團鏈接](https://www.facebook.com/groups/359446638362710)
-- [AP325講義鏈接](https://drive.google.com/drive/u/0/folders/10hZCMHH0YgsfguVZCHU7EYiG8qJE5f-m)
+- [AP325講義(中正大學 吳邦一教授)](https://drive.google.com/drive/u/0/folders/10hZCMHH0YgsfguVZCHU7EYiG8qJE5f-m)
 
 ---
 ## 🍔簡單介紹
