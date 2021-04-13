@@ -175,10 +175,10 @@ int fun()
 {
 	int val, x, y;
 	char a;
+	//判斷是否是數字
 	if (scanf("%d", &val) == 1)
-	{
 		return val;
-	}
+	//分成 f 或 g 的狀況
 	scanf("%c", &a);
 	if (a == 'f')
 	{
