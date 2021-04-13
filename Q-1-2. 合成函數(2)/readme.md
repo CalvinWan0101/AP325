@@ -2,7 +2,7 @@
 - [Q-1-2. 合成函數(2)](https://judge.tcirc.tw/ShowProblem?problemid=d002)
 
 ## 程式碼
-
+- [Q-1-2. 合成函數(2)](https://github.com/CalvinWan0101/AP325/blob/main/Q-1-2.%20%E5%90%88%E6%88%90%E5%87%BD%E6%95%B8(2)/Q-1-2.%20%E5%90%88%E6%88%90%E5%87%BD%E6%95%B8(2).cpp)
 ```c++
 #include <bits/stdc++.h>
 int fun()
