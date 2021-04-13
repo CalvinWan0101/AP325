@@ -132,11 +132,7 @@ input[0] == 'f'|2*x-1
 input[0] == 'g'|x+2*y-3
 else(數字)|原數字
 
-因為輸入的每個東西不論是數字還是字母中間都會用空格隔起來，所以可以直接讓每次輸入都是不同的東西。
-
 ```c++
-//完整程式碼
-#include <bits/stdc++.h>
 int fun()
 {
 	int x, y;
@@ -155,10 +151,5 @@ int fun()
 	}
 	else
 		return atoi(input);
-}
-int main()
-{
-	printf("%d\n", fun());
-	return 0;
 }
 ```
