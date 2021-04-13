@@ -8,6 +8,16 @@
 - [P-1-1b (中正大學吳邦一教授)](https://github.com/CalvinWan0101/AP325/blob/main/P-1-1.%20%E5%90%88%E6%88%90%E5%87%BD%E6%95%B8(1)/p_1_1b.cpp)
 
 ## 解題報告
+
+狀況|行為
+-|-
+f|return 2*x-1
+g|return x+2*y-3
+數字|return 數字
+
+因為輸入的每個東西不論是數字還是字母中間都會用空格隔起來，所以可以直接讓每次輸入都是不同的東西。
+
+
 ```c++
 //完整程式碼
 #include <bits/stdc++.h>
