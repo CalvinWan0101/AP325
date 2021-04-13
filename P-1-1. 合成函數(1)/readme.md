@@ -111,6 +111,8 @@ int main()
 
 ## 我的解題思路
 
+- [P-1-1. 合成函數(1)a](https://github.com/CalvinWan0101/AP325/blob/main/P-1-1.%20%E5%90%88%E6%88%90%E5%87%BD%E6%95%B8(1)/P-1-1.%20%E5%90%88%E6%88%90%E5%87%BD%E6%95%B8(1)a.cpp)
+
 首先是輸入的部分,因為我之前都用cin,cout很少用scanf,printf，我這邊整理一下。這個所輸入的就會是在空格前的所有字元,如輸入"Cal eee"就只有"Cal"會被記錄進去。
 ```c++
 char input[10];
