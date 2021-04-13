@@ -3,6 +3,10 @@
 
 ## 程式碼
 - [Q-1-2. 合成函數(2)](https://github.com/CalvinWan0101/AP325/blob/main/Q-1-2.%20%E5%90%88%E6%88%90%E5%87%BD%E6%95%B8(2)/Q-1-2.%20%E5%90%88%E6%88%90%E5%87%BD%E6%95%B8(2).cpp)
+
+## 解題思路
+基本上這一題跟[P-1-1. 合成函數(1)](https://github.com/CalvinWan0101/AP325/tree/main/P-1-1.%20%E5%90%88%E6%88%90%E5%87%BD%E6%95%B8(1))一模模一樣樣，只要多增加一個h的狀況就好了,詳細內容可以參考P-1-1的解題報告
+- [Q-1-2. 合成函數(2)](https://github.com/CalvinWan0101/AP325/blob/main/Q-1-2.%20%E5%90%88%E6%88%90%E5%87%BD%E6%95%B8(2)/Q-1-2.%20%E5%90%88%E6%88%90%E5%87%BD%E6%95%B8(2).cpp)
 ```c++
 #include <bits/stdc++.h>
 int fun()
