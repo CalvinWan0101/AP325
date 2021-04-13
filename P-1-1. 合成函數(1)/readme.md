@@ -39,26 +39,27 @@ end of eval()
 - [P-1-1a (中正大學吳邦一教授)](https://github.com/CalvinWan0101/AP325/blob/main/P-1-1.%20%E5%90%88%E6%88%90%E5%87%BD%E6%95%B8(1)/p_1_1a.cpp)
 
 ```c++
-// p 1.1a
+// p_1_1
 #include <bits/stdc++.h>
 int eval(){
- int val, x, y, z;
- char token[7];
- scanf("%s", token);
- if (token[0] == 'f') {
- x = eval();
- return 2*x - 1;
- } else if (token[0] == 'g') {
- x = eval();
- y = eval();
- return x + 2*y -3;
- } else {
- return atoi(token);
- }
+    int val, x, y, z;
+    char token[7];
+    scanf("%s", token);
+    if (token[0] == 'f') {
+        x = eval();
+        return 2*x-1;
+    } else if (token[0] == 'g') {
+        x = eval();
+        y = eval();
+        return x + 2*y -3;
+    } else {
+        return atoi(token);
+    }
 }
+
 int main() {
- printf("%d\n", eval());
- return 0;
+    printf("%d\n",eval());
+    return 0;
 }
 ```
 atoi()是一個常用的函數，可以把字串轉成對應的整數，名字的由來是 ascii-toint。當然也有其它的方式來轉換，這一題甚至可以只用 scanf()就可以，這要利用
