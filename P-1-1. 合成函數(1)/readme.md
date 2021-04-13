@@ -7,9 +7,7 @@
 - [P-1-1a (中正大學吳邦一教授)](https://github.com/CalvinWan0101/AP325/blob/main/P-1-1.%20%E5%90%88%E6%88%90%E5%87%BD%E6%95%B8(1)/p_1_1a.cpp)
 - [P-1-1b (中正大學吳邦一教授)](https://github.com/CalvinWan0101/AP325/blob/main/P-1-1.%20%E5%90%88%E6%88%90%E5%87%BD%E6%95%B8(1)/p_1_1b.cpp)
 
-## 解題報告
-
-### AP325中的題解
+## AP325中的敘述
 位於AP325講義P18
 題解：合成函數的意思是它的傳入參數可能是個數字也可能是另外一個函數值。以遞迴
 的觀念來思考，我們可以將一個合成函數的表示式定義為一個函式 eval()，這個函式
@@ -20,7 +18,78 @@
 遞迴呼叫 eval()來取得此參數值，再根據定義計算。如果是 g，就要呼叫 eval()兩
 次取得兩個參數。 以下是演算法流程：
 
+```c++
+int eval() // 一個遞迴函式，回傳表示式的值
+ 讀入一個空白間隔的字串 token;
+ if token 是 f then
+ x = eval();
+ return 2*x - 1;
+ else if token 是 g then 
+ x = eval();
+ y = eval();
+ return x + 2*y - 3;
+ else // token 是一個數字字串
+ return token 代表的數字
+end of eval()
+```
 
+程式實作時，每次我們用字串的輸入來取得下一個字串，而字串可能需要轉成數字，這
+可以用庫存函數 atoi()來做。
+
+```c++
+// p 1.1a
+#include <bits/stdc++.h>
+int eval(){
+ int val, x, y, z;
+ char token[7];
+ scanf("%s", token);
+ if (token[0] == 'f') {
+ x = eval();
+ return 2*x - 1;
+ } else if (token[0] == 'g') {
+ x = eval();
+ y = eval();
+ return x + 2*y -3;
+ } else {
+ return atoi(token);
+ }
+}
+int main() {
+ printf("%d\n", eval());
+ return 0;
+}
+```
+atoi()是一個常用的函數，可以把字串轉成對應的整數，名字的由來是 ascii-toint。當然也有其它的方式來轉換，這一題甚至可以只用 scanf()就可以，這要利用
+scanf()的回傳值。我們可以將 eval()改寫如下，請看程式中的註解。
+
+```c++
+// p 1.1b
+#include <stdio.h>
+
+int eval(){
+    int val, x, y, z;
+    char c;
+    // first try to read an int, if successful, return the int
+    if (scanf("%d",&val) == 1) {
+        return val;
+    }
+    // otherwise, it is a function name: f or g
+    scanf("%c", &c);
+    if (c == 'f') {
+        x = eval(); // f has one variable
+        return 2*x-1;
+    } else if (c == 'g') {
+        x = eval(); // g has two variables
+        y = eval();
+        return x + 2*y -3;
+    }
+}
+
+int main() {
+    printf("%d\n",eval());
+    return 0;
+}
+```
 可以將會遇到的狀況分為一下三種
 
 狀況|回傳
