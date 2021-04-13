@@ -41,25 +41,32 @@ end of eval()
 ```c++
 // p_1_1
 #include <bits/stdc++.h>
-int eval(){
-    int val, x, y, z;
-    char token[7];
-    scanf("%s", token);
-    if (token[0] == 'f') {
-        x = eval();
-        return 2*x-1;
-    } else if (token[0] == 'g') {
-        x = eval();
-        y = eval();
-        return x + 2*y -3;
-    } else {
-        return atoi(token);
-    }
+int eval()
+{
+	int val, x, y, z;
+	char token[7];
+	scanf("%s", token);
+	if (token[0] == 'f')
+	{
+		x = eval();
+		return 2 * x - 1;
+	}
+	else if (token[0] == 'g')
+	{
+		x = eval();
+		y = eval();
+		return x + 2 * y - 3;
+	}
+	else
+	{
+		return atoi(token);
+	}
 }
 
-int main() {
-    printf("%d\n",eval());
-    return 0;
+int main()
+{
+	printf("%d\n", eval());
+	return 0;
 }
 ```
 atoi()是一個常用的函數，可以把字串轉成對應的整數，名字的由來是 ascii-toint。當然也有其它的方式來轉換，這一題甚至可以只用 scanf()就可以，這要利用
@@ -71,28 +78,34 @@ scanf()的回傳值。我們可以將 eval()改寫如下，請看程式中的註
 // p 1.1b
 #include <stdio.h>
 
-int eval(){
-    int val, x, y, z;
-    char c;
-    // first try to read an int, if successful, return the int
-    if (scanf("%d",&val) == 1) {
-        return val;
-    }
-    // otherwise, it is a function name: f or g
-    scanf("%c", &c);
-    if (c == 'f') {
-        x = eval(); // f has one variable
-        return 2*x-1;
-    } else if (c == 'g') {
-        x = eval(); // g has two variables
-        y = eval();
-        return x + 2*y -3;
-    }
+int eval()
+{
+	int val, x, y, z;
+	char c;
+	// first try to read an int, if successful, return the int
+	if (scanf("%d", &val) == 1)
+	{
+		return val;
+	}
+	// otherwise, it is a function name: f or g
+	scanf("%c", &c);
+	if (c == 'f')
+	{
+		x = eval(); // f has one variable
+		return 2 * x - 1;
+	}
+	else if (c == 'g')
+	{
+		x = eval(); // g has two variables
+		y = eval();
+		return x + 2 * y - 3;
+	}
 }
 
-int main() {
-    printf("%d\n",eval());
-    return 0;
+int main()
+{
+	printf("%d\n", eval());
+	return 0;
 }
 ```
 
