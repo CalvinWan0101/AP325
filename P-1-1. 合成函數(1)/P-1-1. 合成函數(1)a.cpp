@@ -12,7 +12,7 @@ int fun()
 	else if (input[0] == 'g')
 	{
 		x = fun();
-		y = fun();f
+		y = fun();
 		return x + 2 * y - 3;
 	}
 	else
@@ -21,6 +21,5 @@ int fun()
 int main()
 {
 	printf("%d\n", fun());
-	system("PAUSE");
 	return 0;
 }
