@@ -130,7 +130,7 @@ printf("%d\n", atoi(input) + 100);
 -|-|-
 input[0] == 'f'| |2*x-1
 input[0] == 'g'| |x+2*y-3
-else(數字)|原數字
+else(數字)|/|原數字
 
 ```c++
 int fun()
