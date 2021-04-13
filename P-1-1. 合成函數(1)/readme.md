@@ -128,29 +128,40 @@ printf("%d\n", atoi(input) + 100);
 
 狀況|x,y的取值|回傳
 -|-|-
-input[0] == 'f'|x=下一字元(一定是數字)|2*x-1
-input[0] == 'g'|x=下一字元(一定是數字)，y=下下一字元(一定是數字)|x+2*y-3
+input[0] == 'f'|x=下次輸入(一定是數字)|2*x-1
+input[0] == 'g'|x=下次輸入(一定是數字)，y=下下次輸入(一定是數字)|x+2*y-3
 else(數字)||原數字
 
 ```c++
-//fun函數
+#include <bits/stdc++.h>
 int fun()
 {
 	int x, y;
 	char input[10];
+	//每次呼叫fun函數都要讀入一次
 	scanf("%s", input);
+	//開始判斷讀入的狀況
 	if (input[0] == 'f')
 	{
+		//x=下個輸入
 		x = fun();
 		return 2 * x - 1;
 	}
 	else if (input[0] == 'g')
 	{
+		//x=下個輸入
 		x = fun();
+		//y=下下個輸入
 		y = fun();
 		return x + 2 * y - 3;
 	}
 	else
+	//讀入的為數字
 		return atoi(input);
+}
+int main()
+{
+	printf("%d\n", fun());
+	return 0;
 }
 ```
