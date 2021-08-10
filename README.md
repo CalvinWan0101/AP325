@@ -9,7 +9,6 @@
 - [APCS實作題檢測(Facebook)](https://www.facebook.com/groups/359446638362710)
 - [AP325講義(中正大學 吳邦一教授)](https://drive.google.com/drive/u/0/folders/10hZCMHH0YgsfguVZCHU7EYiG8qJE5f-m)
 
----
 ## 📋簡單介紹
 這裡存放著我在的所有解題記錄,每一題會開一個資料夾來存放各種語言的解法(C / C++ / Java / Python).目前大部分題目都只有 C++ 的解法,如果條件允許的話後續會逐漸補上其他語言的解法.針對解題過程的部分我都會盡可能去撰寫解題報告,可能會有以下內容:
 - 會用到的演算法
